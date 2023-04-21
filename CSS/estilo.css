@@ -117,6 +117,113 @@ nav {
     box-shadow: 0 8px 32px rgba(31, 73, 97, 0.46);
 }
 
+/* ################################# EDUCATION ################################### */
+
+.section-education {
+    background-color: #8e939e;
+}
+
+.section-education .title {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.education {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+}
+.education i {
+    border: 2px solid #d03d3d ;
+    border-radius: 50%;
+    background-color: #d03d3d;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.education:hover {
+    background-color: #0044ff;
+    box-shadow: 0 0 8px gray;
+    transition: all ease-in-out;
+    color: #fff;
+}
+
+.content-education .education a {
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.content-education .education a:hover {
+    color: #fff;
+}
+/* ############################### CERTIFICADOS ################################ */
+
+.section-certificates .title {
+    display: block;
+    margin: 15px 0 0 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+
+}
+
+.certificates {
+    width: 22%;
+    border-radius: 5px;
+    border: 1px solid #008cff;
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    
+}
+
+.certificates img {
+    height: 80px;
+    width: auto;
+}
+
+.certificates a {
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+}
+
+.certificates:hover {
+    background-color: blue ;
+    box-shadow: 0 0 8px blue;
+    transition: all ease-in-out .4s;
+    color: #fff;
+    transform: scale(1.2);
+    border: 2px solid aquamarine;
+}
+
+.certificates a:hover {
+    color: whitesmoke;
+}
+
 /* ############################### *PIE DE PAGINA ############################## */
 
 
