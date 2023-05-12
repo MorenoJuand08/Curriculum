@@ -19,6 +19,10 @@ h1 {
     overflow: hidden;
 }
 
+.contenedor h1 {
+    margin-bottom: 5%;
+}
+
 header::before {
     content: "";
     display: block;
@@ -58,8 +62,8 @@ nav {
 
 .nav .enlaces-header a:hover {
     color: #fff;
-    background-color: #4a92d6;
-    border-color: #4a92d6;
+    background-color: #3ca0e2;
+    border-color: #094379;
     transition: all ease-in-out .5s;
 }
 
@@ -80,9 +84,12 @@ nav {
 
 .contenido-header > img {
     width: 300px;
-    height: 300px;
-    margin-left: 50px;
-    animation: ease-in animacion 0.5s;
+    height: 350px;
+    margin-left: 75px;
+    animation: ease-in animation 0.5s;
+    border: 3px solid rgb(31, 162, 238);
+    border-radius: 3%;
+    box-shadow: 5px 2px 12px 2px #b7c0d3;
 }
 
 .textos-header {
@@ -91,7 +98,8 @@ nav {
 
 .contenido-header P {
     font-weight: 300;
-    margin-top: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #423e3e;
     text-align: justify;
 }
@@ -105,7 +113,7 @@ nav {
     margin: 28px 0 0 0;
     width: 150px;
     display: inline-block;
-    background-color: #3a93e7;
+    background-color: #00719e;
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -117,10 +125,20 @@ nav {
     box-shadow: 0 8px 32px rgba(31, 73, 97, 0.46);
 }
 
+
+.contenedor a:hover {
+    background-color: #49aed6;
+    transition: all ease-in-out .4s;
+}
+
 /* ################################# EDUCATION ################################### */
 
 .section-education {
-    background-color: #8e939e;
+    background-color: #acd7ff;
+}
+
+.contenedor h1 {
+    font-size: 40px ;
 }
 
 .section-education .title {
@@ -145,19 +163,19 @@ nav {
     padding: 30px;
 }
 .education i {
-    border: 2px solid #d03d3d ;
+    border: 2px solid #03aadd ;
     border-radius: 50%;
-    background-color: #d03d3d;
+    background-color: #005780;
     color: #fff;
     width: 50px;
     height: 50px;
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
     line-height: 36px;
 }
 
 .education:hover {
-    background-color: #0044ff;
+    background-color: #0c9bdd;
     box-shadow: 0 0 8px gray;
     transition: all ease-in-out;
     color: #fff;
@@ -172,15 +190,80 @@ nav {
 .content-education .education a:hover {
     color: #fff;
 }
+
+/* ################################## HABILIDADES ################################## */
+
+.habilidades {
+    background-color:#ffffff ;
+}
+
+.habilidades h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-skills {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 50px;
+    justify-content: space-evenly; 
+}
+.skills {
+    width: 32%;
+    margin-bottom: 70px;
+    transition: 0.5s;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+    color: black;     
+}
+
+.skills img {
+    width: auto;
+    height: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px;
+    color: #565759;
+}
+
+.skills img.softskills {
+    height: 68px;
+}
+
+.skills img:hover {
+    transition-duration: .7s;
+    transform: rotate(360deg);
+}
+
+.skills:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    color: #fff;
+    background: #185672;
+    transition: .5s;
+}
+
 /* ############################### CERTIFICADOS ################################ */
+
+.section-certificates {
+    margin-bottom: 3%;
+}
 
 .section-certificates .title {
     display: block;
-    margin: 15px 0 0 0;
     width: 100%;
+    margin-bottom: 2%;
     text-align: center;
     text-transform: uppercase;
 }
+
 
 .content-certificates {
     display: flex;
@@ -193,9 +276,9 @@ nav {
 .certificates {
     width: 22%;
     border-radius: 5px;
-    border: 1px solid #008cff;
+    border: 1px solid #034174;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 17px;
     padding: 15px;
     
 }
@@ -212,16 +295,61 @@ nav {
 }
 
 .certificates:hover {
-    background-color: blue ;
-    box-shadow: 0 0 8px blue;
+    background-color: #5d9ebd;
+    box-shadow: 0 0 8px rgb(0, 93, 129);
     transition: all ease-in-out .4s;
     color: #fff;
-    transform: scale(1.2);
-    border: 2px solid aquamarine;
+    transform: scale(1.1);
+    border: 2px solid rgb(0, 73, 156);
 }
 
 .certificates a:hover {
     color: whitesmoke;
+}
+
+/* ############################## CONTACTO ##################################### */
+
+
+.inforpersonal {
+    background-color: #ececec;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.content-infopersonal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.space-infoperson {
+    width: 30%;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.space-infoperson img {
+    width: 60%;
+    height: 85%;
+    background-color:#ececec;
+    border-radius: 10px;
+    border: 5px solid #7fbbff;
+}
+
+.space-infoperson p {
+    text-align: justify;
+    margin-top: 6%;
+    font-size: 300;
+    color: #424344;
+}
+
+.space-infoperson img:hover {
+    box-shadow: 0 5px 20px rgba(17, 29, 48, .26);
+    transition: .5s;
 }
 
 /* ############################### *PIE DE PAGINA ############################## */
@@ -252,7 +380,7 @@ footer {
     font-size: 20px;
     font-weight: 400px;
     margin-bottom: 15px;
-    background-color: rgb(45, 101, 206);
+    background-color: #04577e;
     padding: 5px;
     border: 1px solid;
     border-radius: 5px;
@@ -295,7 +423,7 @@ footer {
 }
 
 .partFooter > a:hover {
-    background-color: #3a93e7;
+    background-color: #5d9ebd;
     border-color: #3a93e7;
     border-radius: 5px;
     transition: all ease-in-out .5s;
@@ -318,6 +446,6 @@ footer {
 }
 
 .social-media > a > i:hover {
-    background-color: rgb(32, 129, 226);
+    background-color: #5d9ebd;
     border-color: rgb(88, 199, 255);
 }
