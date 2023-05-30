@@ -170,10 +170,12 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 30px;
+    margin-bottom: 3%;
+
 }
 
 .education {
-    width: 30%;
+    width: 370px;
     background-color: #fff;
     border-radius: 8px;
     padding: 30px;
@@ -183,11 +185,13 @@ nav {
     border-radius: 50%;
     background-color: #005780;
     color: #fff;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 46px;
     font-size: 25px;
     text-align: center;
     line-height: 36px;
+    margin-left: 40%;
+    margin-bottom: 4%;
 }
 
 .education:hover {
@@ -262,7 +266,7 @@ nav {
 .skills:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
     color: #fff;
-    background: #185672;
+    background: #026796;
     transition: .5s;
 }
 
@@ -349,8 +353,8 @@ nav {
 }
 
 .space-infoperson img {
-    width: 60%;
-    height: 85%;
+    width: 75%;
+    height: 93%;
     background-color:#ececec;
     border-radius: 10px;
     border: 5px solid #7fbbff;
@@ -358,7 +362,7 @@ nav {
 
 .space-infoperson p {
     text-align: justify;
-    margin-top: 6%;
+    margin-top: 3%;
     font-size: 300;
     color: #424344;
 }
@@ -385,7 +389,6 @@ footer {
     width: 22%;
     text-align: center;
 }
-
 
 .partFooter img{
     width: 60%;
@@ -474,6 +477,28 @@ footer {
         display: block;
     }
 
+    .content-infopersonal{
+        display: inline-block;
+        width: 250%;
+        margin-left: 10%;
+    }
+
+    .space-infoperson.element-one {
+        display: none;
+    }
+
+    .space-infoperson.element-three{
+        display: none;
+    }
+
+    .content-infopersonal{
+        margin: 0% 0 8% 12% ;
+    }
+
+    .inforpersonal img {
+        display: none;
+    }
+
     .enlaces-header {
         position: fixed;
         background-color: #03aadd;
@@ -549,4 +574,13 @@ footer {
           width: 90%;
           margin-bottom: 10px;
       }
+
+}
+
+@media screen and (max-width:640px){
+
+    .habilidades .contenedor h2 {
+        display: none;
+    }
+
 }
