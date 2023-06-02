@@ -34,10 +34,6 @@ h1 {
     overflow: hidden;
 }
 
-.contenedor h1 {
-    margin-bottom: 5%;
-}
-
 header::before {
     content: "";
     display: block;
@@ -154,6 +150,7 @@ nav {
 }
 
 .contenedor h1 {
+    margin-top: 25px;
     font-size: 40px ;
 }
 
@@ -170,6 +167,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 30px;
+    margin-top: 5%;
     margin-bottom: 3%;
 
 }
@@ -343,7 +341,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px 0;
+    margin-bottom: 5%;
+    margin-top: 3%;
 }
 
 .space-infoperson {
@@ -469,7 +468,35 @@ footer {
     border-color: rgb(88, 199, 255);
 }
 
+footer h4 {
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid #02455f;
+    padding: 9px 10px 9px 20px;
+    background-color: #069ac7;
+    margin-bottom: 9%;
+}
+
+.partFooter2 {
+    margin-bottom: 25px;
+}
+
 /* ########################### BREAKPOINTS ############################## */
+
+@media screen and (max-width:1150px) {
+    .content-certificates {
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        left: 30%;
+
+    }
+
+    
+
+}
+
 
 @media screen and (max-width:710px)
 {
@@ -479,20 +506,14 @@ footer {
 
     .content-infopersonal{
         display: inline-block;
-        width: 250%;
-        margin-left: 10%;
     }
 
     .space-infoperson.element-one {
         display: none;
     }
 
-    .space-infoperson.element-three{
-        display: none;
-    }
-
-    .content-infopersonal{
-        margin: 0% 0 8% 12% ;
+    .content-infopersonal .space-infoperson.element-two{
+        margin-left: 3%;
     }
 
     .inforpersonal img {
@@ -501,7 +522,7 @@ footer {
 
     .enlaces-header {
         position: fixed;
-        background-color: #03aadd;
+        background-color: #88bfff;
         top: 0;
         right: 0;
         width: 100%;
@@ -510,6 +531,10 @@ footer {
         align-items: center;
         flex-direction: column;
         clip-path: circle(0.0% at 0 0);
+    }
+
+    .enlaces-header.hamburgueropen { 
+
     }
 
     .nav .hamburgueropen {
@@ -545,13 +570,6 @@ footer {
         margin: 35px 0 0 0px;
         width: 200px;
         height: 240px;
-    }
-
-    /* SECTION EDUCATION */
-
-    .education{
-        width: 80%;
-        margin-bottom: 15px;
     }
 
         /* HABILIDADES */
@@ -592,16 +610,10 @@ footer {
     }
 
       /* SECTION FOOTER */
-
-    .partFooter img {
-        display: none;
+    
+    .partFooter {
+        display: block;
     }
-
-    .partFooter{
-        width: 90%;
-        margin-bottom: 10px;
-    }
-
 @media  screen and (max-width:1075px) {
     .content-infopersonal img {
         display: none;
@@ -621,4 +633,31 @@ footer {
         }
 }
 
+@media screen and (max-width:1000px){
+    .partFooter img {
+        display: none;
+    }
 
+    .partFooter {
+        display: none;
+    }
+}
+
+@media screen and (max-width:965px){
+    .content-education {
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        margin-left: 27.5%;
+    
+    }
+
+    /* SECTION EDUCATION */
+
+    .education{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
