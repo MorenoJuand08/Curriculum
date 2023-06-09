@@ -488,12 +488,11 @@ footer h4 {
 @media screen and (max-width:1150px) {
     .content-certificates {
         display: inline-block;
-        position: relative;
         top: 50%;
-        left: 30%;
-
+        
+    
+        
     }
-
     
 
 }
@@ -505,25 +504,9 @@ footer h4 {
         display: block;
     }
 
-    .content-infopersonal{
-        display: inline-block;
-    }
-
-    .space-infoperson.element-one {
-        display: none;
-    }
-
-    .content-infopersonal .space-infoperson.element-two{
-        margin-left: 3%;
-    }
-
-    .inforpersonal img {
-        display: none;
-    }
-
     .enlaces-header {
         position: fixed;
-        background-color: #88bfff;
+        background-color: aqua;
         top: 0;
         right: 0;
         width: 100%;
@@ -531,25 +514,23 @@ footer h4 {
         display: flex;
         align-items: center;
         flex-direction: column;
-        clip-path: circle(0.0% at 0 0);
-    }
-
-    .enlaces-header.hamburgueropen { 
+        clip-path: circle(0.0% at 1% 1%);
 
     }
 
     .nav .hamburgueropen {
-        clip-path: circle(150.0% at 0 0);
+        clip-path: circle(150.0% at 1% 1%);
+
     }
 
     .nav .enlaces-header a {
-        color: white;
-        background-color: #3077b9;
+        color: #fff;
+        background-color: gray;
         text-transform: uppercase;
-        font-weight: 800;
+        font-weight: 800px;
         width: 50%;
         text-align: center;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     h1 {
@@ -561,61 +542,56 @@ footer h4 {
         margin: 0px;
     }
 
-    .contenido-header{
+    .contenido-header {
         display: block;
         height: auto;
         margin-bottom: 15px;
     }
 
     .contenido-header > img {
-        margin: 35px 0 0 0px;
-        width: 200px;
-        height: 240px;
+        margin: 25px 0 0 0;
+        width: 150px;
+        height: 150px;
     }
 
-        /* HABILIDADES */
+    /* SECTION EDUCATION */
 
-    .contenedor {
-        margin-bottom: 15%;
-        align-items: center;
-        justify-items: center;
-        margin: 0%;
-        }
-    
-    .contenedor h1 {
-        margin-left: 13%;
+    .education {
+        width: 80%;
+        margin-bottom: 15px;
     }
 
-    .skills {
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        margin-left: 9%;
-        }
+    /* SECTION HABILIDADES */
 
-    .content-skills{
-        display:inline-block;
-        }
-        
+    .skills{
+        width: 50%;
+        margin-right: 15px;
     }
 
     /* SECTION CERTIFICATES */
 
-    .certificates{
-        width: 45%;
-        width: 320px;
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 30px;
-        margin-left: 2%;
+    .content-certificates {
+        margin-left: 29%;
     }
 
-      /* SECTION FOOTER */
-    
-    .partFooter {
-        display: block;
+    .title h1 {
+        margin-left: auto;
     }
-@media  screen and (max-width:1075px) {
+
+    .contenedor {
+        margin: auto;
+    }
+
+    .certificates {
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .certificates > img {
+        height: 80px;
+    }
+
+    /* SECTION CONTACTO */
     .content-infopersonal img {
         display: none;
     }
@@ -633,32 +609,14 @@ footer h4 {
             height: 80px;
         }
 }
+    /* SECTION FOOTER */
 
-@media screen and (max-width:1000px){
-    .partFooter img {
+    .partFooter > img {
         display: none;
     }
 
     .partFooter {
-        display: none;
-    }
-}
-
-@media screen and (max-width:965px){
-    .content-education {
-        display: inline-block;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 5%;
-        margin-bottom: 3%;
-        margin-left: 27.5%;
-    
-    }
-
-    /* SECTION EDUCATION */
-
-    .education{
         width: 80%;
-        margin-bottom: 15px;
     }
+    
 }
