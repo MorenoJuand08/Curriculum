@@ -286,7 +286,7 @@ nav {
 
 .content-certificates {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     padding-bottom: 30px;
 
@@ -485,20 +485,22 @@ footer h4 {
 
 /* ########################### BREAKPOINTS ############################## */
 
-@media screen and (max-width:1150px) {
-    .content-certificates {
-        display: inline-block;
-        top: 50%;
-        
-    
-        
+@media screen and (min-width:1151) {
+    .section-certificates{
+        display: flex;
     }
-    
-
 }
 
 
-@media screen and (max-width:710px)
+@media screen and (max-width:1150px),( min-width:750px){
+    .certificates {
+        width: 90%;
+        margin-right: 15px;
+    }
+}
+
+
+@media screen and (max-width:749px)
 {
     .hamburguer {
         display: block;
@@ -570,10 +572,6 @@ footer h4 {
 
     /* SECTION CERTIFICATES */
 
-    .content-certificates {
-        margin-left: 29%;
-    }
-
     .title h1 {
         margin-left: auto;
     }
@@ -582,8 +580,14 @@ footer h4 {
         margin: auto;
     }
 
+    .content-certificates {
+        display: inline-block;
+        justify-content: space-evenly;
+        margin-left: 25%;
+    }
+
     .certificates {
-        width: 50%;
+        width: 80%;
         margin-right: 15px;
     }
 
@@ -608,7 +612,7 @@ footer h4 {
         .certificates img {
             height: 80px;
         }
-}
+
     /* SECTION FOOTER */
 
     .partFooter > img {
